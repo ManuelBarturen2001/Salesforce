@@ -1,0 +1,19 @@
+.center-content {
+    text-align: center;
+}
+
+.custom-progress {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.custom-progress::part(bar) {
+    background-color: #0176D3;
+}
+
+.tareasc{
+    margin-bottom: 15px;
+}
+.tareasp{
+    margin-top: 15px;
+}

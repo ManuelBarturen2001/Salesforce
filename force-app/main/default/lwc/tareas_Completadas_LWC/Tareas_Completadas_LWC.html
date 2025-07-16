@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Progreso de Tareas Completadas">
+        <template if:true={hasTasks}>
+            <p class="slds-p-horizontal_small">Tareas Completadas: {completedTasks} de {totalTasks}</p>
+            <lightning-progress-bar
+                value={completionPercent}
+                size="medium"
+                class="slds-m-around_medium">
+            </lightning-progress-bar>
+        </template>
+        <template if:false={hasTasks}>
+            <p class="slds-p-horizontal_small">No hay tareas asociadas a este contacto.</p>
+        </template>
+    </lightning-card>
+</template>
